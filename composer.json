@@ -2,15 +2,16 @@
     "name": "pyatakss/composerpack",
     "description": "PDO based classes to singular connections",
     "license" : "BSD",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "pyatak_ss",
             "email": "pyatak_ss@groupbwt.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "pssPack\\pdosingle\\": "lib/"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0"
         }
     }
 }
