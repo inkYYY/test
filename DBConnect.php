@@ -1,5 +1,5 @@
 <?php
-namespace pyatakss\composerpack;
+namespace pyatakss\db;
 
 use \PDO as PDO,
     \DBConnectionInterface as DBConnectionInterface;
