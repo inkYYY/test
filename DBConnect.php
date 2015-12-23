@@ -12,13 +12,13 @@ class DBConnect implements DBConnectionInterface
      *  DBs connections
      *
      * [ '$dsn' => [
-     *              '$username' =>  [
-     *                               'dbh' => '$dbh',
-     *                               'config' => [
-     *                                             'username' => '',
-     *                                             'password' => ''
-     *                                            ]
-     *                               ]
+     *                  '$username' =>  [
+     *                                      'dbh' => '$dbh',
+     *                                      'config' => [
+     *                                                      'username' => '',
+     *                                                      'password' => ''
+     *                                                   ]
+     *                                  ]
      *             ]
      *
      * ]

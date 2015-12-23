@@ -79,7 +79,11 @@ class DBQuery implements DBQueryInterface
             }
 
         } else {
+            $start = microtime(true);
+
             $this->stmt = $this->dbConnection->getPdoInstance()->query($query);
+
+            $this->executionTime = round(((microtime(true) - $start)/1000), 8);
         }
 
         if ($this->stmt) {
@@ -174,10 +178,12 @@ class DBQuery implements DBQueryInterface
     public function execute($query, array $params = null)
     {
         $start = microtime(true);
+
         $this->stmt = $this->dbConnection->getPdoInstance()->prepare($query);
 
         if ($this->stmt->execute($params)) {
-            $this->executionTime = (float)round(((microtime(true) - $start)/1000), 5);
+            $this->executionTime = round(((microtime(true) - $start)/1000), 8);
+
             return $this->stmt->rowCount();
         }
 

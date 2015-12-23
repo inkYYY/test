@@ -7,10 +7,5 @@
             "name": "pyatak_ss",
             "email": "pyatak_ss@groupbwt.com"
         }
-    ],
-    "autoload": {
-        "psr-4": {
-            "pyatakss\\db\\": ""
-        }
-    }
+    ]
 }
